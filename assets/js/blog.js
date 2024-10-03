@@ -19,12 +19,13 @@ const tagMaker = function(elementType, text, parent){
   const tags = document.createElement(elementType);
   tags.textContent = text;
   parent.appendChild(tags);
-
+  return tags;
 };
 
 tagMaker("h2", blogData.title, mainBlock);
 tagMaker("p", blogData.content, mainBlock);
 tagMaker("p",blogData.name, mainBlock);
+
 
 
 

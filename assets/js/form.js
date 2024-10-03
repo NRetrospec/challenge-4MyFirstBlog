@@ -21,7 +21,10 @@ const formSubmit = (event) => {
     title: titleEl,
     content: contentEl,
   };
-  console.log(blogData)
+
+
+  const blogString = JSON.stringify(blogData)
+  localStorage.setItem("blogs",blogString);
 };
 
 formBlock.addEventListener("submit", formSubmit);
