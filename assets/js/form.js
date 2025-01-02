@@ -1,30 +1,17 @@
-const formBlock = document.querySelector("form");
-
-// Function to handle when user hits submit button
-const formSubmit = (event) => {
+document.getElementById('blogForm').addEventListener('submit', function(event) {
   event.preventDefault();
-  console.log(event)
-  const usernameEl = document.getElementById("username").value;
-  const titleEl = document.getElementById("title").value;
-  const contentEl = document.getElementById("content").value;
+  
+  const username = document.getElementById('username').value;
+  const title = document.getElementById('title').value;
+  const content = document.getElementById('content').value;
 
-  if (!usernameEl || !titleEl || !contentEl) {
-    alert("Please complete all fields");
+  if (username && title && content) {
+      const blogPost = { username, title, content };
+      let posts = JSON.parse(localStorage.getItem('blogPosts')) || [];
+      posts.push(blogPost);
+      localStorage.setItem('blogPosts', JSON.stringify(posts));
+      window.location.href = 'blog.html';
+  } else {
+      alert('Please complete the form.');
   }
-
-
-
-
-
-  const blogData = {
-    name: usernameEl,
-    title: titleEl,
-    content: contentEl,
-  };
-
-
-  const blogString = JSON.stringify(blogData)
-  localStorage.setItem("blogs",blogString);
-};
-
-formBlock.addEventListener("submit", formSubmit);
+});

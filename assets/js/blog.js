@@ -1,31 +1,16 @@
-const mainBlock = document.querySelector("main")
+window.onload = function() {
+  const posts = JSON.parse(localStorage.getItem('blogPosts')) || [];
+  const postsContainer = document.querySelector('main');
 
-
-
-// const blogTitle = document.createElement("h2");
-// blogTitle.textContent = blogData.title;
-// mainBlock.appendChild(blogTitle);
-
-// const blogContent = document.createElement("p");
-// blogContent.textContent = blogData.content;
-// mainBlock.appendChild(blogContent);
-
-// const blogData = {
-//   name: usernameEl,
-//   title: titleEl,
-//   content: contentEl,
-// };
-const tagMaker = function(elementType, text, parent){
-  const tags = document.createElement(elementType);
-  tags.textContent = text;
-  parent.appendChild(tags);
-  return tags;
+  posts.forEach(post => {
+      const postElement = document.createElement('div');
+      postElement.innerHTML = `
+          <h2>${post.title}</h2>
+          <p>${post.content}</p>
+          <p><em>By: ${post.username}</em></p>
+      `;
+      postsContainer.appendChild(postElement);
+  });
 };
-
-tagMaker("h2", blogData.title, mainBlock);
-tagMaker("p", blogData.content, mainBlock);
-tagMaker("p",blogData.name, mainBlock);
-
-
 
 
