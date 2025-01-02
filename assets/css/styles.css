@@ -1,16 +1,14 @@
-/* Light Theme (Default) */
+
 body {
   background-color: #ffffff;
   color: #000000;
 }
 
-/* Dark Theme */
 body.dark-theme {
   background-color: #121212;
   color: #ffffff;
 }
 
-/* Header Styles */
 header {
   position: relative;
   width: 100%;
@@ -18,14 +16,14 @@ header {
   padding: 10px;
 }
 
-/* Toggle Button Styles */
+
 #themeToggle {
   background: none;
   border: none;
   font-size: 24px;
   cursor: pointer;
   padding: 5px;
-  color: inherit; /* Inherits the text color from the body */
+  color: inherit; 
 }
 
 #themeToggle:hover {

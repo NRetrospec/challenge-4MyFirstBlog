@@ -1,41 +1,41 @@
-/* Style for the main container holding all blog posts */
+
 main {
   display: flex;
   flex-direction: column;
   align-items: center;
   padding: 20px;
-  gap: 20px; /* Space between each post box */
+  gap: 20px; 
 }
 
-/* Style for each blog post box */
+
 .post-box {
-  width: 80%; /* Adjust the width as needed */
+  width: 80%; 
   background-color: #f9f9f9;
-  border: 2px solid black; /* Black solid border */
+  border: 2px solid black; 
   border-radius: 8px;
   padding: 20px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-  margin-bottom: 20px; /* Space between each post box */
+  margin-bottom: 20px; 
 }
 
-/* Style for the blog title */
+
 .post-box h2 {
   font-style: bold;
   color: #000000;
   font-size: 14px;
-  display: block; /* Make the element a block to span the full width */
-  border-bottom: 1px solid black; /* Add a solid black underline */
-  padding-bottom: 5px; /* Add some space between the text and the underline */
+  display: block; 
+  border-bottom: 1px solid black; 
+  padding-bottom: 5px; 
 }
 
-/* Style for the blog content */
+
 .post-box p {
   font-size: 16px;
   color: #333;
   margin-bottom: 10px;
 }
 
-/* Style for the "Posted by" text */
+
 .post-box p em {
   font-style: italic;
   color: #555;
@@ -44,7 +44,7 @@ main {
 
 #topTitle 
   {
-    text-align: left; /* Align the text to the left */
-    margin: 0; /* Remove default margin */
-    padding: 0; /* Remove default padding */
+    text-align: left; 
+    margin: 0; 
+    padding: 0; 
 }
