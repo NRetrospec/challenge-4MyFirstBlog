@@ -1,0 +1,74 @@
+/* Center the "My First Blog" heading and style it */
+h2:first-of-type {
+  text-align: center;
+  display: inline-block;
+  padding: 50px; /* Half the padding */
+  border-radius: 50%;
+  background-color: #007BFF;
+  color: white;
+  font-size: 60px; /* Half the font size */
+  width: 375px; /* Half the width */
+  height: 375px; /* Half the height */
+  line-height: 350px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  margin-right: 20px; /* Add space between the circle and the separator */
+}
+
+/* Style the "What's On Your Mind?" text */
+h2:nth-of-type(2) {
+  text-align: center;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  font-size: 28px;
+  color: #333;
+}
+
+/* Add a vertical double line separator */
+.separator {
+  border-left: 6px double #007BFF;
+  height: 100%;
+  margin: 0 20px; /* Add space around the separator */
+}
+
+/* Style the form container */
+#blogForm {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  width: 100%;
+  max-width: 500px;
+}
+
+/* Style the input fields and textarea */
+#blogForm input[type="text"],
+#blogForm textarea {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 16px;
+}
+
+/* Style the submit button */
+#blogForm input[type="submit"] {
+  padding: 10px 20px;
+  background-color: #28a745;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+#blogForm input[type="submit"]:hover {
+  background-color: #218838;
+}
+
+/* Ensure the main container is properly aligned */
+main {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+  gap: 20px; /* Add space between the circle, separator, and form */
+}

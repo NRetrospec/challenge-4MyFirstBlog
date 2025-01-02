@@ -1,0 +1,33 @@
+/* Light Theme (Default) */
+body {
+  background-color: #ffffff;
+  color: #000000;
+}
+
+/* Dark Theme */
+body.dark-theme {
+  background-color: #121212;
+  color: #ffffff;
+}
+
+/* Header Styles */
+header {
+  position: relative;
+  width: 100%;
+  text-align: right;
+  padding: 10px;
+}
+
+/* Toggle Button Styles */
+#themeToggle {
+  background: none;
+  border: none;
+  font-size: 24px;
+  cursor: pointer;
+  padding: 5px;
+  color: inherit; /* Inherits the text color from the body */
+}
+
+#themeToggle:hover {
+  opacity: 0.8;
+}

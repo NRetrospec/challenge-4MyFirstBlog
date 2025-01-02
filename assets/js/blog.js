@@ -4,6 +4,7 @@ window.onload = function() {
 
   posts.forEach(post => {
       const postElement = document.createElement('div');
+      postElement.classList.add('post-box'); // Add the .post-box class
       postElement.innerHTML = `
           <h2>${post.title}</h2>
           <p>${post.content}</p>
